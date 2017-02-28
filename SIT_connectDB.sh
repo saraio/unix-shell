@@ -1,7 +1,7 @@
 export PATH=/oracle/11.2/11.2.0.3/bin:$PATH
 export ORACLE_HOME=/oracle/11.2/11.2.0.3
 #set linesize 9999
-sqlplus -s username/password#@(DESCRIPTION =(ADDRESS_LIST =(ADDRESS = (PROTOCOL = TCP)(HOST = hostname)(PORT = 1810)))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = IDDDEV))) << EOF
+sqlplus -s username/password#@(DESCRIPTION =(ADDRESS_LIST =(ADDRESS = (PROTOCOL = TCP)(HOST = hostname)(PORT = 1810)))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = servicename))) << EOF
 set pagesize 0
 set feedback off
 set heading off 
